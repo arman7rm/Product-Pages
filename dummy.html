@@ -1,134 +1,204 @@
 <style>
+    body {
+        font-family: 'montserrat', sans-serif;
+    }
+
+
     .middle-banner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Vertically center both sections */
-            height: 300px; /* Set a height for the banner */
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Vertically center both sections */
+        height: 300px;
+        /* Set a height for the banner */
+    }
 
-        .left-section {
-            display: flex;
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Vertically center the content */
+        width: 50%;
+        margin: 10px;
+    }
+
+    .right-section {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .right-section img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .short-description hr {
+        display: none;
+    }
+
+    .short-description img {
+        display: none;
+    }
+
+    .short-description .middle-banner {
+        display: none;
+    }
+
+    .short-description .lower-ban-three-desc {
+        display: none;
+    }
+
+    .short-description h1 {
+        font-weight: bold;
+        /* This makes the text bold */
+        font-size: inherit;
+        /* Inherit the font size from the parent */
+
+    }
+
+    .short-description h2 {
+        display: none;
+    }
+
+    .perfumer-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .perfumer-image {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    /* Media Query for Mobile */
+    @media screen and (max-width: 768px) {
+        .middle-banner {
             flex-direction: column;
-            justify-content: center; /* Vertically center the content */
-            width: 50%;
-            margin: 10px;
+            /* Stack the sections vertically */
+            height: auto;
+            /* Remove fixed height */
         }
 
+        .perfumer-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .perfumer-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .left-section,
         .right-section {
-            width: 50%;
-            margin: 10px;
+            width: 100%;
+            /* Make each section take up full width */
+            margin: 10px 0;
+            /* Add some space between the stacked sections */
+            text-align: center;
+            /* Center-align the text on mobile */
         }
 
         .right-section img {
-            width: 75%;
-            height: auto;
+            width: 100%;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* Adjust the image size on smaller screens */
         }
-        .short-description img{
-            display: none;
-        }
-  
-        .short-description .middle-banner{
-            display: none;
-        }
-        .short-description .lower-ban-three-desc{
-            display: none;
-        }
-  .short-description h1,
-.short-description h2 {
-    font-weight: bold; /* This makes the text bold */
-    font-size: inherit; /* Inherit the font size from the parent */
-    
-}
-  /* Media Query for Mobile */
-        @media screen and (max-width: 768px) {
-            .middle-banner {
-                flex-direction: column; /* Stack the sections vertically */
-                height: auto; /* Remove fixed height */
-            }
 
-            .left-section,
-            .right-section {
-                width: 100%; /* Make each section take up full width */
-                margin: 10px 0; /* Add some space between the stacked sections */
-                text-align: center; /* Center-align the text on mobile */
-            }
-
-            .right-section img {
-                width: 50%; /* Adjust the image size on smaller screens */
-            }
-
-            .header h1 {
-                font-size: 28px; /* Adjust heading size for mobile */
-            }
-
-            .top-banner p {
-                font-size: 16px; /* Adjust paragraph font size for mobile */
-            }
+        .header h1 {
+            font-size: 28px;
+            /* Adjust heading size for mobile */
         }
+
+        .top-banner p {
+            font-size: 16px;
+            /* Adjust paragraph font size for mobile */
+        }
+    }
 </style>
 <div class="container">
-        <div class="top-banner">
-            <h1>Heavenly Gingerlily Bath &amp; Shower Gel: Escape to Paradise</h1>
-            <p>Bring the essence of island bliss to your bathroom with our iconic white-floral body wash. Luxuriously enriched with lingering notes of lively ginger, elegant lily, and soft musk, this exotic scent will transport you to a world of calm and relaxation.</p>
-        </div>
-<br>
-        <div class="middle-banner">
-            <div class="left-section">
-                <h2>The Fragrance Journey</h2>
-                <p>
-                    Imagine black sands slipping into a serene Polynesian lagoon, as delicate ginger lilies peek through tropical foliage. The breeze carries hints of fragrant spices, enticing your senses on a journey to distant shores. 
-                </p>
-                <ul>
-                    <li>
-<strong>Top Notes:</strong> Lively Ginger, Spiced Cardamom</li>
-                    <li>
-<strong>Heart Notes:</strong> Delicate Lily, Jasmine Petals</li>
-                    <li>
-<strong>Base Notes:</strong> Soft Musk, Sandalwood</li>
-                </ul>
-                <p><strong>Exotic. Alluring. Escapist.</strong></p>
-            </div>
-            <div class="right-section">
-                <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/ginger.png?v=1727375593" alt="Molton Brown Heavenly Gingerlily Bath &amp; Shower Gel">
-            </div>
-        </div>
-<hr>
-        <div class="lower-ban-three-desc">
-          
-        <h2>Why You'll Love It</h2>
-            <ul>
-                <li>
-<strong>Luxurious Lather:</strong> Gentle yet effective cleansing, leaving your skin feeling refreshed and pampered.</li>
-                <li>
-<strong>Exotic Fragrance:</strong> Transports you to tropical beaches with its rich, warm, and sultry scent.</li>
-                <li>
-<strong>Vegan &amp; Cruelty-Free:</strong> Crafted with care, free from animal testing and harmful ingredients.</li>
-            </ul>
-        </div>
+    <div class="top-banner">
+        <h1>Transform Your Skin with Luxurious Hydration</h1>
+        <p>Indulge your senses and treat your skin with our fast-absorbing Hand Lotion. Lightweight yet deeply
+            nourishing, this skin-softening lotion melts effortlessly into freshly cleansed hands, leaving them
+            delicately scented with our signature white floral fragrance — a scent that exudes pure bliss.
 
-        <div class="lower-ban-three-desc">
-          
-        <h2>Did You Know?</h2>
-            <p>Inspired by Master Perfumer Jacques Chabert’s visit to a tropical botanical garden, this fragrance captures the heady scent of an exceptional type of ginger flower. By blending it with aquatic notes, the fragrance is a modern twist on the iconic ’90s marine perfume trend.</p>
-        </div>
-
-        <div class="lower-ban-three-desc">
-          <hr>
-        <h2>Key Ingredients</h2>
-            <ul>
-                <li>
-<strong>Water/Aqua:</strong> Hydrates and refreshes the skin.</li>
-                <li>
-<strong>Sodium Laureth Sulfate:</strong> Gently cleanses without stripping moisture.</li>
-                <li>
-<strong>Propylene Glycol:</strong> Locks in hydration, keeping your skin soft and smooth.</li>
-                <li>
-<strong>Fragrance/Parfum:</strong> A harmonious blend of spicy, floral, and musky notes.</li>
-            </ul>
-            <p><strong>Vegan formula | Free from Parabens &amp; Sulfates</strong><br>Suitable for daily use on all skin types.</p>
-          <h2>Ingredients</h2>
-<p>Water/Aqua/Eau, Sodium Laureth Sulfate, Propylene Glycol, Cocamidopropyl Betaine, Fragrance/Parfum, Coco-Glucoside, Glycerin, Laureth-7 Citrate, Ethylhexyl Salicylate, Polyquaternium-7, Tetrasodium Glutamate Diacetate, Butyl Methoxydibenzoylmethane, Diethylhexyl Syringylidenemalonate, Citric Acid, Sodium Hydroxide, Tocopherol, Peg-150 Pentaerythrityl Tetrastearate, Ppg-2 Hydroxyethyl Cocamide, Sodium Benzoate, Alpha-Isomethyl Ionone, Citronellol, Eugenol, Geraniol, Hexyl Cinnamal, Hydroxycitronellal, Linalool, Blue 1/Ci 42090, Red 33/Ci 17200, Red 4/Ci 14700.</p>
-        </div>
-  
+        </p>
     </div>
+
+    <div class="middle-banner">
+        <div class="left-section">
+            <h2>The Fragrance Journey</h2>
+            <p>
+                Imagine black sands cascading into the crystal-clear waters of a Polynesian lagoon. Ginger lilies bloom
+                amidst lush green foliage, while exotic spices fill the warm air. This hand lotion transports you to the
+                shores of Tahiti, stirring your inner wanderlust with every application.
+
+
+            </p>
+            <p><strong>Exotic. Seductive. Escapist.</strong></p>
+        </div>
+        <div class="right-section">
+            <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/ginger.png?v=1727375593"
+                alt="Molton Brown Heavenly Gingerlily Hand Lotion">
+        </div>
+    </div>
+    <hr>
+    <div class="lower-ban-three-desc">
+        <h2>Fragrance Origins </h2>
+        <p>Our captivating scent was born from a moment of botanical discovery. Renowned Master Perfumer Jacques Chabert
+            stumbled upon a rare ginger flower in a secluded garden. Inspired by its intoxicating aroma, he masterfully
+            blended its essence with aquatic notes, creating a modern twist on the beloved marine fragrance trend of the
+            '90s.
+        </p>
+    </div>
+    <h2>Meet The Perfumer</h2>
+    <div class="lower-ban-three-desc perfumer-section">
+
+        <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/perfumer.png?v=1727381841"
+            alt="Jacques Chabert" class="perfumer-image">
+        <div>
+            <p><strong>Jacques Chabert, Master Perfumer</strong></p>
+            <p>With over 50 years of experience, Jacques is the visionary architect behind our renowned Re-charge
+                Black Pepper and Heavenly Gingerlily collections. His aromatic legacy continues as he passes his
+                fragrant flair to his daughters, Carla and Elsa, who contribute to our signature fragrances.</p>
+        </div>
+    </div>
+    <div class="lower-ban-three-desc">
+        <h2>Did You Know?</h2>
+        <p>The idea for this fragrance blossomed when Master Perfumer Jacques Chabert visited a botanical garden and
+            discovered an exceptional type of ginger flower. He recreated its heady quality and combined it with aquatic
+            notes, putting his own floral twist on the ’90s marine perfumery trend.</p>
+    </div>
+
+    <div class="lower-ban-three-desc">
+        <hr>
+        <h2>Key Ingredients &amp; Benefits</h2>
+        <ul>
+            <li>
+                <strong>Shea Butter:</strong> Deeply hydrates and restores moisture.
+            </li>
+            <li>
+                <strong>Glycerin:</strong> Draws in hydration to leave your skin soft and supple.
+            </li>
+            <li>
+                <strong>Gentle Formula:</strong> Vegan-friendly, perfect for daily use.
+            </li>
+            <li>
+                <strong>Lightweight Texture:</strong> Non-greasy and ideal for quick absorption.
+            </li>
+        </ul>
+        <p>Experience the exotic allure of Tahitian bliss in every use — your skin will thank you.</p>
+        <p><strong>Vegan formula | Free from Parabens &amp; Sulfates</strong><br>Ideal for all skin types, perfect
+            for daily use.</p>
+    </div>
+</div>
