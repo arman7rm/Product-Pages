@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molton Brown - Coastal Cypress & Sea Fennel Bath & Shower Gel</title>
+</head>
+<style>
+    body {
+        font-family: "montserrat", sans-serif;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container-row.perfumer-section {
+        background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/widebckg.png?v=1741723048');
+        /* Replace with your image path */
+        min-height: 350px;
+        background-size: cover;
+        /* Ensures the image covers the entire div */
+        background-position: center;
+        /* Centers the background image */
+        background-repeat: no-repeat;
+        /* Prevents the image from repeating */
+        width: 100vw;
+        /* Makes the div as wide as the viewport */
+        margin-left: -50vw;
+        /* Offsets the div to align with the left edge of the viewport */
+        left: 50%;
+        /* Centers the div horizontally */
+        position: relative;
+        /* Ensures proper positioning */
+        padding: 20px 25% 20px 25%;
+        /* Adds some padding around the content */
+        color: white;
+        /* Adjust text color if needed for better visibility */
+        box-sizing: border-box;
+        /* Ensures padding is included in the width */
+    }
+
+    .container-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-container {
+        width: 50%;
+        /* Take up 50% of the container width */
+        display: flex;
+        justify-content: center;
+        /* Center the image horizontally */
+        align-items: center;
+        /* Center the image vertically */
+    }
+
+    .did-you-know {
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    .center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 400px;
+        /* Ensure the image doesn't exceed its container */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    .short-description img {
+        display: none;
+    }
+
+    .short-description hr {
+        display: none;
+    }
+
+    .short-description .banner {
+        display: none;
+    }
+
+    .short-description .did-you-know {
+        display: none;
+    }
+
+    .short-description h1,
+    .short-description h2 {
+        font-weight: bold;
+        /* This makes the text bold */
+        font-size: inherit;
+        /* Inherit the font size from the parent */
+    }
+
+    .perfumer-section {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        font-size: 18px;
+        justify-content: space-around;
+    }
+
+    .fragrance-exp {
+        width: 50%;
+    }
+
+    .left-section {
+        width: 60%;
+    }
+
+    .right-section {
+        width: 50%;
+    }
+
+    .right-section img {
+        height: auto;
+        display: block;
+        max-width: 500px;
+    }
+
+    .left-section img {
+        height: auto;
+        display: block;
+        max-width: 400px;
+    }
+
+
+    .perfumer-image {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -30%;
+    }
+
+    hr {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .perfumer-text {
+        width: 50%;
+        margin-right: 20%;
+    }
+
+    .perfumer-img-container {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+
+        /* Styles for tablet/medium devices */
+        .perfumer-section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .perfumer-text {
+            text-align: center;
+            width: 100%;
+            margin-right: 0%;
+        }
+
+        .perfumer-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 20px 10px 20px;
+        }
+
+        .perfumer-img-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            /* Adjust height as needed */
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .fragrance-exp {
+            width: 100%;
+        }
+
+        .banner-with-image {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 23px;
+        }
+
+        .perfumer-text {
+            text-align: center;
+            width: 100%;
+            margin-right: 0%;
+        }
+
+        .perfumer-image {
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            margin: 0 20px 10px 20px;
+        }
+
+        .top p {
+            font-size: 16px;
+            /* Adjust paragraph font size for mobile */
+        }
+
+        .right-section {
+
+            justify-content: center;
+            /* Center horizontally */
+        }
+
+        hr {
+            display: none;
+        }
+
+        .right-section img {
+            width: 350px;
+            height: auto;
+            display: block;
+        }
+
+        .container-row {
+            flex-direction: column;
+        }
+
+        .image-container {
+            width: 80%;
+            justify-content: center;
+        }
+
+        .second-img {
+            padding-left: 1rem;
+        }
+
+
+        .did-you-know {
+            width: 100%;
+        }
+
+
+        .perfumer-banner {
+            margin-top: 20px;
+        }
+
+        .container-row.perfumer-section {
+
+            padding: 20px;
+            background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/mobile_background.png?v=1741722110');
+            /* Replace with your image path */
+        }
+    }
+
+    .perfumer-img-container {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="top container-col">
+            <h1>Indulge your senses with Delicious Rhubarb &amp; Rose Bath &amp; Shower Gel.</h1>
+            <p>An iconic floral-fruity body wash that transforms your bathing ritual into a delightful escape. Envelop
+                your skin in a tantalizing blend of bright grapefruit, tart rhubarb leaf, and creamy vanilla, creating a
+                refreshing atmosphere that fills your bathroom with joy.
+            </p>
+        </div>
+
+        <div class="banner container-row">
+            <div class="container-col fragrance-exp">
+                <h2>The Fragrance Story</h2>
+                <p>
+                    Imagine a slice of crimson summer tart bursting with flavor. Picture freshly picked roses adorning
+                    your pantry table, mingling with the sweet scent of glossy ribbons of rhubarb stem and scattered
+                    pastry crumbs. This exquisite fragrance is a delectable recipe that treats your senses with a
+                    vibrant citrus twist, leaving you feeling invigorated and uplifted.
+
+                </p>
+                <p><strong>Vivacious. Fizzy. Tempting.</strong></p>
+            </div>
+            <div class="right-section">
+                <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/rose.png?v=1727454165"
+                    alt="Delicious Rhubarb &amp; Rose Bath &amp; Shower Gel">
+            </div>
+        </div>
+        <div class="banner container-col perfume-banner">
+            <div class="container-row perfumer-section">
+                <div class="perfumer-img-container">
+                    <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/perfumer_068f2840-7db6-454b-bc6a-9f2593d2f4f9.png?v=1727454164"
+                        alt="Vanessa Prudent" class="perfumer-image">
+                </div>
+                <div class="perfumer-text">
+                    <h2>Meet The Perfumer</h2>
+                    <p><strong>Vanessa Prudent, Senior Perfumer</strong></p>
+                    <p>From her early childhood experiences in the French Normandy countryside, Vanessa Prudent has
+                        cultivated a profound passion for natural scents. Her love for nature, culinary delights, and
+                        travel infuses her fragrances with a diverse and sensitive touch, making her creations truly
+                        unique.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-row" style="margin-top: 5%; margin-bottom: 5%;">
+            <div class="container-col did-you-know">
+                <h2>Did You Know?</h2>
+                <p>This award-winning scent draws inspiration from Vanessa's cherished childhood memories of baking,
+                    creating a fragrant recipe that has delighted Molton Brown fans for years. Each wash is a nostalgic
+                    journey, evoking the warmth and comfort of home.</p>
+
+            </div>
+            <div class="image-container second-img">
+                <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/rose2.png?v=1727454165"
+                    alt=" Rhubarb &amp; Rose">
+            </div>
+        </div>
+        <hr>
+        <div class="container-col banner" style="padding-top: 30px;">
+            <h2>Why You’ll Love It</h2>
+            <ul>
+                <li>
+                    <strong>Sensory Delight:</strong> Elevate your bathing experience with this lush and vibrant body
+                    wash that awakens your senses with every use.
+                </li>
+                <li>
+                    <strong>Gourmet Indulgence: </strong>Inspired by the art of baking, this shower gel offers an almost
+                    edible aroma that will transform your daily routine into a celebration of sweetness.
+                </li>
+                <li>
+                    <strong>Vegan Formula: </strong> Crafted with care for both your skin and the environment, this
+                    formula delivers luxury without compromise.
+                </li>
+            </ul>
+            <p><strong>Free from Parabens &amp; Sulfates</strong><br>Ideal for all skin types, perfect
+                for daily use.</p>
+            <h2>Ingredients</h2>
+            <p>
+                Water / Aqua / Eau, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Fragrance / Parfum, Laureth-7
+                Citrate, Sodium Chloride, Propylene Glycol, Coco Glucoside, Lonicera Caprifolium (Honeysuckle) Flower
+                Extract, Lonicera Japonica (Honeysuckle) Flower Extract, Rheum Rhabarbarum Stalk Extract, Rosa
+                Multiflora Fruit Extract, Ethylhexylglycerin, Glycerin, Ppg-26-Buteth-26, Peg-40 Hydrogenated Castor
+                Oil, Benzophenone-4, Butyl Methoxydibenzoylmethane, Ethylhexyl Methoxycinnamate, Ethylhexyl Salicylate,
+                Benzyl Alcohol, Benzyl Salicylate, Citral, Citronellol, Geraniol, Limonene, Linalool, Sodium Phytate,
+                Tetrasodium Glutamate Diacetate, Butylene Glycol, Salicylic Acid, Sorbic Acid, Phenoxyethanol, Sodium
+                Hydroxide, Caramel, Red 33 / C.I. 17200.</p>
+            <h2>Sustainability</h2>
+            <ul>
+                <li>Recyclable bottle*, made from 50% recycled plastic*</li>
+                <li>*Excluding cap</li>
+                <li>100% vegan formula*, cruelty free, made in England, free from parabens, responsibly manufactured</li>
+                <li>*No ingredient of animal origin</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

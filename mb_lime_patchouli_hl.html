@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molton Brown - Lime & Patchouli Hand Lotion</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "montserrat", sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .container-row.perfumer-section {
+            background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/widebckg.png?v=1741723048');
+            /* Replace with your image path */
+            min-height: 350px;
+            background-size: cover;
+            /* Ensures the image covers the entire div */
+            background-position: center;
+            /* Centers the background image */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+            width: 100vw;
+            /* Makes the div as wide as the viewport */
+            margin-left: -50vw;
+            /* Offsets the div to align with the left edge of the viewport */
+            left: 50%;
+            /* Centers the div horizontally */
+            position: relative;
+            /* Ensures proper positioning */
+            padding: 20px 25% 20px 25%;
+            /* Adds some padding around the content */
+            color: white;
+            /* Adjust text color if needed for better visibility */
+            box-sizing: border-box;
+            /* Ensures padding is included in the width */
+        }
+
+        .container-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .image-container {
+            width: 50%;
+            /* Take up 50% of the container width */
+            display: flex;
+            justify-content: center;
+            /* Center the image horizontally */
+            align-items: center;
+            /* Center the image vertically */
+        }
+
+        .did-you-know {
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        .center {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            /* Ensure the image doesn't exceed its container */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+        .short-description img {
+            display: none;
+        }
+
+        .short-description hr {
+            display: none;
+        }
+
+        .short-description .banner {
+            display: none;
+        }
+
+        .short-description .did-you-know {
+            display: none;
+        }
+
+        .short-description h1,
+        .short-description h2 {
+            font-weight: bold;
+            /* This makes the text bold */
+            font-size: inherit;
+            /* Inherit the font size from the parent */
+        }
+
+        .perfumer-section {
+            display: flex;
+            align-items: center;
+            margin-top: 35px;
+            font-size: 18px;
+            justify-content: space-around;
+        }
+
+        .fragrance-exp {
+            width: 50%;
+        }
+
+        .left-section {
+            width: 60%;
+        }
+
+        .right-section {
+            width: 50%;
+        }
+
+        .right-section img {
+            height: auto;
+            display: block;
+            max-width: 500px;
+        }
+
+        .left-section img {
+            height: auto;
+            display: block;
+            max-width: 400px;
+        }
+
+
+        .perfumer-image {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: -30%;
+        }
+
+        hr {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .perfumer-text {
+            width: 50%;
+            margin-right: 20%;
+        }
+
+        .perfumer-img-container {
+            width: 50%;
+            margin-left: 10%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+
+            /* Styles for tablet/medium devices */
+            .perfumer-section {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .perfumer-text {
+                text-align: center;
+                width: 100%;
+                margin-right: 0%;
+            }
+
+            .perfumer-image {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                margin: 0 20px 10px 20px;
+            }
+
+            .perfumer-img-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                /* Adjust height as needed */
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .fragrance-exp {
+                width: 100%;
+            }
+
+            .banner-with-image {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+            hr{
+                display: none;
+            }
+            .perfumer-text {
+                text-align: center;
+                width: 100%;
+                margin-right: 0%;
+            }
+
+            .perfumer-image {
+                width: 155px;
+                height: 155px;
+                border-radius: 50%;
+                margin: 0 20px 10px 20px;
+            }
+
+            .top p {
+                font-size: 16px;
+                /* Adjust paragraph font size for mobile */
+            }
+
+            .right-section {
+
+                justify-content: center;
+                /* Center horizontally */
+            }
+
+            .right-section img {
+                width: 350px;
+                height: auto;
+                display: block;
+            }
+
+            .container-row {
+                flex-direction: column;
+            }
+
+            .image-container {
+                width: 80%;
+                justify-content: center;
+            }
+
+            .second-img {
+                padding-left: 1rem;
+            }
+
+
+            .did-you-know {
+                width: 100%;
+            }
+
+
+            .perfumer-banner {
+                margin-top: 20px;
+            }
+
+            .container-row.perfumer-section {
+
+                padding: 20px;
+                background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/mobile_background.png?v=1741722110');
+                /* Replace with your image path */
+            }
+        }
+
+        .perfumer-img-container {
+            width: 100%;
+            margin-left: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+    <div class="container">
+        <div class="top container-col">
+            <h1>Refresh and lightly moisturise hands with our popular Lime &amp; Patchouli Hand Lotion.</h1>
+            <p>Introduce the long-lasting notes of juicy, vibrant lime contrasted with unexpected deep spice to your
+                skin for a moment of rejuvenation.</p>
+        </div>
+        <div class="banner container-row">
+            <div class="container-col fragrance-exp">
+                <h2>The Fragrance Experience</h2>
+                <p>An alfresco bay market, vibrant with abundant flavours. The unmistakeable zing of freshly squeezed
+                    lime and uplifting eucalyptus pierce the air. Crushed cardamom reveals an unexpected spicy twist
+                    wrapped in the rich depths of patchouli. Express your lively side; revitalise with citrusy
+                    freshness.</p>
+                <p><strong>Sparkling. Verdant. Enlivening.</strong></p>
+            </div>
+            <div class="right-section"><img
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/lily.png?v=1727883525"
+                    alt="Lime &amp; Patchouli Hand Lotion"></div>
+        </div>
+        <div class="banner container-col perfume-banner">
+            <div class="container-row perfumer-section">
+                <div class="perfumer-img-container"><img
+                        src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/perfumer.png?v=1727381841"
+                        alt="Jacques Chabert" class="perfumer-image"></div>
+                <div class="perfumer-text">
+                    <h2>Meet The Perfumer</h2>
+                    <p><strong>Jacques Chabert, Master Perfumer</strong></p>
+                    <p>With 50 years’ experience, Jacques is the expert architect behind our iconic Re-charge Black
+                        Pepper and Heavenly Gingerlily collections. His fragrant flair is one he’s passed onto his
+                        perfumer daughters, Carla and Elsa, who have created some of our other signature fragrances.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-row" style="margin-top: 5%; margin-bottom: 5%;">
+            <div class="container-col did-you-know">
+                <h2>Did You Know?</h2>
+                <p>This bestselling fragrance was created by Master Perfumer Jacques Chabert, who we’ve worked with for
+                    more than 30 years and still call a friend today.</p>
+            </div>
+            <div class="image-container second-img"><img
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/lime.png?v=1728428902"
+                    alt="Lime &amp; Patchouli Fine Liquid Hand Wash"></div>
+        </div>
+        <hr>
+        <div class="container-col banner" style="padding-top: 3rem;">
+            <h2>Ingredients</h2>
+            <p>Vegan formula. Find out more.</p>
+            <p>Water / Aqua / Eau, Glycerin, Butyrospermum Parkii (Shea) Butter, Propylheptyl Caprylate, Cetearyl
+                Alcohol, Fragrance / Parfum, Citrus Hystrix Leaf Extract, Ethylhexylglycerin, Glycine Soja (Soybean)
+                Oil, Isohexadecane, Stearic Acid, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Palmitic
+                Acid, Sorbitan Caprylate, Polysorbate 80, Sorbitan Oleate, Limonene, Linalool, Tocopherol, Propanediol,
+                Propylene Glycol, Phenoxyethanol, Benzoic Acid, Citric Acid, Sodium Hydroxide.*</p>
+            <p>*Ingredient lists may vary. For the most updated version, please refer to the product packaging.</p>
+        </div>
+    </div>
+</body>
+
+</html>
