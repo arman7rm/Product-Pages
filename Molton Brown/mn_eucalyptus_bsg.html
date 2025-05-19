@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Heavenly Gingerlily Bath & Shower Gel </title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "montserrat", sans-serif;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container-row.perfumer-section {
+        background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/widebckg.png?v=1741723048');
+        /* Replace with your image path */
+        min-height: 350px;
+        background-size: cover;
+        /* Ensures the image covers the entire div */
+        background-position: center;
+        /* Centers the background image */
+        background-repeat: no-repeat;
+        /* Prevents the image from repeating */
+        width: 100vw;
+        /* Makes the div as wide as the viewport */
+        margin-left: -50vw;
+        /* Offsets the div to align with the left edge of the viewport */
+        left: 50%;
+        /* Centers the div horizontally */
+        position: relative;
+        /* Ensures proper positioning */
+        padding: 20px 25% 20px 25%;
+        /* Adds some padding around the content */
+        color: white;
+        /* Adjust text color if needed for better visibility */
+        box-sizing: border-box;
+        /* Ensures padding is included in the width */
+    }
+
+    .container-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-container {
+        width: 50%;
+        /* Take up 50% of the container width */
+        display: flex;
+        justify-content: center;
+        /* Center the image horizontally */
+        align-items: center;
+        /* Center the image vertically */
+    }
+
+    .did-you-know {
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    .center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 400px;
+        /* Ensure the image doesn't exceed its container */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    .short-description img {
+        display: none;
+    }
+
+    .short-description hr {
+        display: none;
+    }
+
+    .short-description .banner {
+        display: none;
+    }
+
+    .short-description .container-row {
+        display: none;
+    }
+
+    .short-description .did-you-know {
+        display: none;
+    }
+
+    .short-description h1,
+    .short-description h2 {
+        font-weight: bold;
+        /* This makes the text bold */
+        font-size: inherit;
+        /* Inherit the font size from the parent */
+    }
+
+    .perfumer-section {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        font-size: 18px;
+        justify-content: space-around;
+    }
+
+    .fragrance-exp {
+        width: 50%;
+    }
+
+    .left-section {
+        width: 60%;
+    }
+
+    .right-section {
+        width: 50%;
+    }
+
+    .right-section img {
+        height: auto;
+        display: block;
+        max-width: 500px;
+    }
+
+    .left-section img {
+        height: auto;
+        display: block;
+        max-width: 400px;
+    }
+
+
+    .perfumer-image {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -30%;
+    }
+
+    hr {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .perfumer-text {
+        width: 50%;
+        margin-right: 20%;
+    }
+
+    .perfumer-img-container {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+
+        /* Styles for tablet/medium devices */
+        .perfumer-section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .perfumer-text {
+            text-align: center;
+            width: 100%;
+            margin-right: 0%;
+        }
+
+        .perfumer-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 20px 10px 20px;
+        }
+
+        .perfumer-img-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            /* Adjust height as needed */
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .fragrance-exp {
+            width: 100%;
+        }
+
+        .banner-with-image {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 23px;
+        }
+
+        .perfumer-text {
+            text-align: center;
+            width: 100%;
+            margin-right: 0%;
+        }
+
+        .perfumer-image {
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            margin: 0 20px 10px 20px;
+        }
+
+        .top p {
+            font-size: 16px;
+            /* Adjust paragraph font size for mobile */
+        }
+
+        .right-section {
+
+            justify-content: center;
+            /* Center horizontally */
+        }
+
+        hr {
+            display: none;
+        }
+
+        .right-section img {
+            width: 350px;
+            height: auto;
+            display: block;
+        }
+
+        .container-row {
+            flex-direction: column;
+        }
+
+        .image-container {
+            width: 80%;
+            justify-content: center;
+        }
+
+        .second-img {
+            padding-left: 1rem;
+        }
+
+
+        .did-you-know {
+            width: 100%;
+        }
+
+
+        .perfumer-banner {
+            margin-top: 20px;
+        }
+
+        .container-row.perfumer-section {
+
+            padding: 20px;
+            background-image: url('https://cdn.shopify.com/s/files/1/0077/5415/4099/files/mobile_background.png?v=1741722110');
+            /* Replace with your image path */
+        }
+    }
+
+    .perfumer-img-container {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="top container-col">
+            <h1>Awaken your senses and invigorate your morning ritual with the energizing power of Infusing Eucalyptus
+                Bath &amp; Shower Gel.</h1>
+            <p>This refreshing body wash infuses your skin with the aromatic blend of revitalizing eucalyptus, zesty
+                wild mint, and the grounding warmth of cedarwood. Feel restored and recharged as you embark on a sensory
+                journey through nature’s wildest, most fragrant landscapes.
+            </p>
+
+        </div>
+        <div class="banner container-row">
+            <div class="container-col fragrance-exp">
+                <h2>The Fragrance Story</h2>
+                <p>
+                    Imagine the crisp air of a towering eucalyptus forest, where the scent of evergreen trees and the
+                    mist of a distant waterfall fill the atmosphere. Notes of blue haze rise from the forest floor as
+                    the natural oils from the underbrush create an invigorating aroma. Immerse yourself in this bold,
+                    refreshing fragrance that is both a morning wake-up call and an escape into the wild.
+                </p>
+                <p><strong>Pure. Bold. Stimulating.</strong></p>
+            </div>
+            <div class="right-section">
+                <img src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/eucalyptus1.png?v=1727452048"
+                    alt="Molton Brown Infusing Eucalyptus Bath &amp; Shower Gel">
+
+            </div>
+        </div>
+        <div class="container-row" style="margin-top: 5%; margin-bottom: 5%;">
+            <div class="image-container second-img"><img
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/eucalyptus_2.png?v=1727452048"
+                    alt="eucalyptus">
+            </div>
+            <div class="container-col did-you-know">
+                <h2>Did You Know?</h2>
+                <p>The idea for this fragrance blossomed when Master Perfumer Jacques Chabert visited a botanical garden
+                    and discovered an exceptional type of ginger flower. He recreated its heady quality and combined it
+                    with aquatic notes, putting his own floral twist on the ’90s marine perfumery trend.</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="container-col banner" style="padding-top: 30px;">
+            <h2>Why You’ll Love It</h2>
+            <ul>
+                <li>
+                    <strong>Energizing Cleanse:</strong>Start your day feeling revitalized, thanks to the invigorating
+                    blend of eucalyptus and wild mint.
+                </li>
+                <li>
+                    <strong>Aromatherapy in a Bottle:</strong> Infuse your shower with the essence of nature’s freshness
+                    for a deeply stimulating, uplifting experience.
+                </li>
+                <li>
+                    <strong>Vegan Formula:</strong>A clean, eco-conscious choice made with your well-being and the
+                    planet in mind.
+                </li>
+            </ul>
+            <p><strong>Free from Parabens &amp; Sulfates</strong><br>Ideal for all skin types, perfect
+                for daily use.</p>
+
+
+            <h2>Ingredients</h2>
+            <p>Water/Aqua/Eau, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Fragrance/Parfum, Propylene Glycol,
+                Coco-Glucoside, Glycerin, Laureth-7 Citrate, Peg-40 Hydrogenated Castor Oil, Ethylhexyl Salicylate,
+                Citric Acid, Tetrasodium Glutamate Diacetate, Polyquaternium-7, Butyl Methoxydibenzoylmethane,
+                Diethylhexyl Syringylidenemalonate, Sodium Hydroxide, Peg-150 Pentaerythrityl Tetrastearate, Ppg-2
+                Hydroxyethyl Cocamide, Tocopherol, Sodium Benzoate, Citronellol, Coumarin, Eugenol, Geraniol, Limonene,
+                Linalool, Green 3/Ci 42053, Yellow 5/Ci 19140.
+
+            </p>
+
+            <h2>Sustainability</h2>
+            <ul>
+                <li>Recyclable bottle*, made from 50% recycled plastic*</li>
+                <li>*Excluding cap</li>
+                <li>Made using only sustainably sourced, RSPO-certified palm oil derivatives</li>
+                <li>100% vegan formula*, cruelty free, made in England, free from parabens, responsibly manufactured
+                </li>
+                <li>*No ingredient of animal origin</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

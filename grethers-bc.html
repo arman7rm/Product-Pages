@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        font-family: 'Lora', serif;
+    }
+
+    .main {
+        background-color: #fdca4d;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    .pastille-img {
+        width: 400px;
+        transition: transform 0.3s ease;
+    }
+
+    .pastille-img:hover {
+        transform: scale(1.1);
+    }
+
+    .brand{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 2rem;
+        width: 500px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="main col center">
+        <h2 class="brand">Grether's</h2>
+        <h3 class="heading">Those Who Rely On Their Voice, Rely On Grether's</h3>
+        <div class="row center">
+            <a href="https://www.eislerchemist.com/collections/blackcurrant">
+                <img class="pastille-img"
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/black_currant_1.png?v=1747413041"
+                    alt="Black Currant">
+            </a>
+            <a href="https://www.eislerchemist.com/collections/grethers-pastilles-blueberry">
+                <img class="pastille-img"
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/redcurrant_1.png?v=1747413041"
+                    alt="Red Currant">
+            </a>
+            <a href="https://www.eislerchemist.com/collections/grethers-pastilles-blueberry-1">
+                <img class="pastille-img"
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/blueberry_1.png?v=1747413041"
+                    alt="Blue Berry">
+            </a>
+            <a href="https://www.eislerchemist.com/collections/grethers-pastilles-elderflower">
+                <img class="pastille-img"
+                    src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/elderflower_1.png?v=1747413041"
+                    alt="Elder Flower">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
