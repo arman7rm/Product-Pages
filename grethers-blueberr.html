@@ -1,0 +1,174 @@
+<style>
+    .short {
+        display: none;
+    }
+
+    .short-description .short {
+        display: block;
+    }
+
+    .short-description .container-col,
+    .short-description .container-row {
+        display: none;
+    }
+
+    .short-description .main {
+        background-color: white;
+    }
+
+    .top {
+        background-color: #fdca4d;
+      border-radius: 45px;
+    }
+
+    .middle {
+        margin: 3rem 0;
+    }
+
+    .bottom {
+        background-color: #fdca4d;
+      border-radius: 45px;
+    }
+
+    .main {
+        padding: 2rem;
+        font-family: 'Lora', serif;
+    }
+
+    .container-row {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .container-col {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .box {
+        width: 50%;
+    }
+
+    .image {
+        width: 80%;
+        max-height:  auto;
+      padding: 1.5rem;
+      border-radius: 45px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        justify-content: center;
+        padding: 35px;
+    }
+
+    /* 🔁 Responsive for tablets and below */
+    @media (max-width: 768px) {
+        .container-row {
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .text {
+            padding: 1.5rem;
+        }
+
+        .middle {
+            margin: 2rem 0;
+        }
+
+        .image {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<div class="main">
+    <div class="short">
+        <p>
+            Grether’s Pastilles is the best vocal care remedy for the throat and voice. If you are a performer, present in public or
+            rely on your voice for your livelihood, Grether’s Pastilles should be part of your routine.
+        </p>
+        <p><strong>Those who rely on their voice, rely on Grether's Pastilles. Our delicously crafted
+                pastilles:</strong></p>
+        <ul>
+            <li>- Protect The Vocal Cords</li>
+            <li>- Soothes The Throat</li>
+            <li>- Combat Dry Mouth</li>
+            <li>- Helps With Hoarse Voice</li>
+        </ul>
+    </div>
+
+    <div class="container-row top">
+        <div class="box container-col text">
+            <h2>Product Overview</h2>
+            <p>
+                Grether’s Pastilles is the best vocal care remedy for the throat and voice. Handcrafted in Switzerland
+                over
+                150 years ago, our traditional pastilles have been recognized around the world to protect the vocal
+                cords,
+                soothe the throat, combat dry mouth and help with hoarse voice. If you are a performer, present in
+                public or
+                rely on your voice for your livelihood, Grether’s Pastilles should be part of your routine.
+            </p>
+            <p><strong>Those who rely on their voice, rely on Grether's Pastilles. Our delicously crafted
+                    pastilles:</strong></p>
+            <ul>
+                <li>- Protect The Vocal Cords</li>
+                <li>- Soothes The Throat</li>
+                <li>- Combat Dry Mouth</li>
+                <li>- Helps With Hoarse Voice</li>
+            </ul>
+        </div>
+        <div class="box center long">
+            <img class="image" src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/regular-blackcurrant__2.jpg?v=1747845365" alt="">
+        </div>
+    </div>
+
+    <div class="container-row middle">
+        <div class="box center">
+            <img class="image" src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/regular-blackcurrant__3.jpg?v=1747845365" alt="">
+        </div>
+        <div class="box container-col text">
+
+            <p>
+                Grether’s Pastilles are a unique blend of powerful ingredients formulated to provide effective relief
+                from
+                irritated throats caused by excessive taking, singing, or speaking. Its intense flavors provide a
+                refreshing
+                taste, while the glycerin helps moisten and soothe the irritated mucous membranes in the mouth and
+                throat.
+            </p>
+            <h3>To consume</h3>
+            <p>
+                Dissolve one pastille in the mouth to allow the glycerin to coat the throat. Repeat every two hours, if
+                required. Do not consume in excess, as the pastilles may have a laxative effect.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-row bottom">
+        <div class="box container-col text">
+            <h3>Ingredients</h3>
+            <p>
+                Glucose syrup, sugar, gelatin, molasses, blackcurrant juice, citric acid, agar-agar, glycerine, grape
+                juice concentrate (coloring), flavoring, vegetable oil (coconut, canola), beeswax
+            </p>
+        </div>
+        <div class="box center">
+            <img class="image" src="https://cdn.shopify.com/s/files/1/0077/5415/4099/files/regular-blackcurrant__4.jpg?v=1747845365" alt="">
+        </div>
+    </div>
+</div>

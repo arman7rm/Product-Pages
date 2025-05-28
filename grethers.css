@@ -1,0 +1,182 @@
+.row > * {
+  width: auto !important;
+  max-width: none !important;
+  flex-shrink: 1 !important;
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Base Layout */
+.main {
+  background-color: #fdca4d;
+  width: 100%;
+  padding: 2rem;
+  font-family: "Lora", serif;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.overview {
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+}
+
+.text-container {
+  padding: 8rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 2rem;
+  width: 500px;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+/* Candy Container Layout */
+.candy-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.candy-container a {
+  flex: 1 1 18%;
+  max-width: 18%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Image Styling */
+.pastille-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.pastille-img:hover {
+  transform: scale(1.05);
+}
+
+/* Optional Icon Link Styling */
+a.icon {
+  display: inline-flex;
+  width: auto;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.yellow-box {
+  width: 100%;
+  height: 550px;
+  background-color: #fdca4d;
+}
+.text-box {
+  justify-content: center;
+  padding: 6rem 18rem 6rem 6rem;
+}
+.box {
+  width: 50%;
+}
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+.hero-banner {
+  width: 100%;
+  height: 350px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0077/5415/4099/files/grether-s-benefits-ginger-lemon.png?v=1747687365");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ginger-banner {
+  width: 100%;
+  height: 90vh; /* Full screen height */
+  background-image: url("https://cdn.shopify.com/s/files/1/0077/5415/4099/files/ginger-lemon-hero.jpg?v=1747849124");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background: rgba(0, 0, 0, 0.4); /* Overlay for better text visibility */
+}
+@media (max-width: 768px) {
+  .container-row {
+    flex-direction: column;
+  }
+  
+  .hero-banner {
+    height: 250px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0077/5415/4099/files/grether-s-benefits-ginger-lemon.png?v=1747687365");
+  }
+  .ginger-banner {
+    height: 60vh;
+    background-image: url("https://cdn.shopify.com/s/files/1/0077/5415/4099/files/ginger-lemon-hero.jpg?v=1747849124");
+  }
+  .hero-content {
+    padding: 10px;
+  }
+}
+/* Responsive: Tablet (3 per row) */
+@media (max-width: 1024px) {
+  .candy-container {
+    flex-wrap: wrap;
+  }
+
+  .candy-container a {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+/* Responsive: Mobile (2 per row) */
+@media (max-width: 768px) {
+  .candy-container a {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
