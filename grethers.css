@@ -145,10 +145,13 @@ a.icon {
   /*background: rgba(0, 0, 0, 0.4); /* Overlay for better text visibility */
 }
 @media (max-width: 768px) {
+    .text-box {
+        padding: 2rem 1.5rem;
+      }
   .container-row {
     flex-direction: column;
   }
-  
+
   .hero-banner {
     height: 250px;
     background-image: url("https://cdn.shopify.com/s/files/1/0077/5415/4099/files/grether-s-benefits-ginger-lemon.png?v=1747687365");
